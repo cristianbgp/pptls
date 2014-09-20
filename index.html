@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Piedra, Papel, Tijera, Lagarto & Spock</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Piedra, Papel, Tijera, Lagarto & Spock</h1>
+		</header>
+		<main>
+			<div class="div_reglas">
+				<p id="boton_reglas">Reglas</p>
+				<div id="reglas">
+					<blockquote>“Las tijeras cortan el papel, el papel cubre a la piedra, la piedra aplasta al lagarto, el lagarto envenena a Spock, Spock destroza las tijeras, las tijeras decapitan al lagarto, el lagarto se come el papel, el papel refuta a Spock, Spock vaporiza la piedra, y, como es habitual… la piedra aplasta las tijeras.”</blockquote>
+				</div>
+		
+			</div>
+			<div class="div_botonjugar">	
+				<a href="#div_jugar"><p id="boton_jugar">Jugar</p></a>
+			</div>
+			<div id="div_jugar" class="div_jugar">
+				<p class="p_title">Escoge:</p>
+				<div class="opciones">
+					<div id="piedra" class="flip3D">
+					    			<div class="back"></div>
+					    			<div class="front">
+					    				<p>Piedra</p>
+					    			</div>
+					</div>
+					<div id="papel" class="flip3D">
+					    			<div class="back"></div>
+					    			<div class="front">
+					    				<p>Papel</p>
+					    			</div>
+					</div>
+					<div id="tijera" class="flip3D">
+					    			<div class="back"></div>
+					    			<div class="front">
+					    				<p>Tijera</p>
+					    			</div>
+					</div>
+					<div id="lagarto" class="flip3D">
+					    			<div class="back"></div>
+					    			<div class="front">
+					    				<p>Lagarto</p>
+					    			</div>
+					</div>
+					<div id="spock" class="flip3D">
+					    			<div class="back"></div>
+					    			<div class="front">
+										<p>Spock</p>
+					    			</div>
+					</div>
+		
+				</div>
+		
+				<br>
+				<div class="batalla">
+					<div class="eleccion_jugador">
+						<p>Tú</p>
+						<div class="opcion_elegida">
+							
+						</div>
+					</div>
+					<div class="eleccion_sheldon">
+						<p>Sheldon</p>
+						<div class="opcion_sheldon">
+							
+						</div>
+					</div>
+					<div class="mensaje">
+						
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			
+		</footer>
+	</div>
+	<script src="js/piedracompleto.js"></script>	
+</body>
+</html>

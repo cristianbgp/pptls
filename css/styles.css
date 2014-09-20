@@ -1,0 +1,368 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+}
+
+.wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #566DBE;
+    width:auto;
+    height: 200px;
+    text-align: center;
+
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    font-size:2.1875em;
+    color: #ECEDE9;
+    padding-top: 80px;
+}
+
+main{
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+.div_reglas{
+    background-color: #CECECE;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#boton_reglas{
+    margin: 0;
+    background-color: #B90000;
+    width: 200px;
+    height: 71px;
+    text-align: center;
+    border-radius: 23px;
+    font-size: 2em;
+    padding-top: 18px;
+    margin-left: 41.875%; /*536px;*/
+    cursor: pointer;
+}
+
+#boton_reglas:hover{
+    background-color: rgba(174, 31, 31, 0.77);
+    color: #fff;
+}
+
+#reglas{
+    max-width: 600px;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    font-size: 1.2em;
+    padding: 14px;
+    margin-top: 55px;
+    margin-left: 26.25%;/*336px;*/
+}
+
+#reglas blockquote{
+    margin: 0;
+}
+
+
+#reglas:before{
+    position: absolute;
+    left: 50%;
+    content: "";
+    margin-left: -20px;
+    top: -20px;
+
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    border-width: 0 20px 20px 20px;
+}
+
+.div_botonjugar{
+    background-color: #418B75;
+    height: 96px;
+    padding-top: 13px;
+}
+
+#boton_jugar{
+    margin: 0;
+    background-color: #B90000;
+    width: 200px;
+    height: 71px;
+    text-align: center;
+    border-radius: 23px;
+    font-size: 2em;
+    padding-top: 18px;
+    margin-left: 41.875%; /*536px;*/
+    cursor: pointer;
+}
+
+.div_botonjugar a{
+    color:#000;
+    text-decoration: none;
+}
+
+#boton_jugar:hover{
+    background-color: rgba(174, 31, 31, 0.77);
+    color: #fff;
+}
+
+.div_jugar{
+    background-color: #84D65C;
+    height: auto;
+    padding-top: 30px;
+}
+
+.p_title{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+.opciones{
+    /*margin-left: 88px;*/
+    margin: 0 auto;
+    padding: 20px;
+    display: table;  
+}
+
+
+
+/*3D*/
+.flip3D {
+    width: 200px;
+    height:200px;
+    margin:10px;
+    display: inline-block;
+
+}
+.flip3D > .front {
+    position:absolute;
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+    background:#FC0;
+    width:200px;
+    height:200px;
+    border-radius: 7px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+}
+.flip3D > .back {
+    position:absolute;
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
+    background: #80BFFF;
+    width:200px;
+    height:200px;
+    border-radius: 7px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+}
+.flip3D:hover > .front {
+    -webkit-transform: perspective(600px) rotateY(-180deg);
+    transform: perspective(600px) rotateY(-180deg);
+}
+.flip3D:hover > .back {
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+}
+/*3D*/
+
+.flip3D p{
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    text-align: center;
+    line-height: 2em;
+    margin-top: 60px;
+    text-transform: uppercase;
+}
+
+#piedra > .back{
+    background-image: url(../img/piedra.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#papel > .back{
+    background-image: url(../img/papel.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#tijera > .back{
+    background-image: url(../img/tijera.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#lagarto > .back{
+    background-image: url(../img/lagarto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#spock > .back{
+    background-image: url(../img/spock.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.batalla{
+    position: relative;
+}
+
+.eleccion_jugador{
+    float: left;
+    background-color: #008080;
+    width: 48%;
+    height: 250px;
+    margin-left: 14px;
+}
+
+.eleccion_sheldon{
+    float: left;
+    background-color: #ff0;
+    width: 48%;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.eleccion_jugador p , .eleccion_sheldon p{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.opcion_elegida ,.opcion_sheldon{
+    text-align: center;
+}
+
+
+.mensaje{
+    color:#C6060C;
+    font-size: 2.1em;
+    text-transform: uppercase;
+    background-color: #0ff;
+    max-width: 300px;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 40.78125%;/*522px;*/
+    text-align: center;
+    padding: 0 10px;
+}
+
+@media only screen and (max-width: 1157px){
+    #reglas{
+
+    }
+
+    .flip3D, .front, .back {
+        width: 140px;
+        height: 140px;
+    }
+
+    .flip3D p {
+        font-size: 1.3em;
+    }
+
+    .flip3D > .front{
+        width: 140px;
+        height: 140px;
+    }
+
+    .flip3D > .back{
+        width: 140px;
+        height: 140px;
+    }
+
+    .mensaje{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 888px){
+    #reglas{
+        margin-left: 19%;
+    }
+
+    .flip3D, .front, .back {
+        width: 140px;
+        height: 140px;
+    }
+
+    .flip3D p {
+        font-size: 1.3em;
+    }
+
+    .flip3D > .front{
+        width: 140px;
+        height: 140px;
+    }
+
+    .flip3D > .back{
+        width: 140px;
+        height: 140px;
+    }
+
+    .mensaje{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 856px){
+    #reglas{
+
+    }
+
+    .flip3D, .front, .back {
+        width: 120px;
+        height: 120px;
+    }
+
+    .flip3D p {
+        font-size: 1.3em;
+        margin-top: 40px;
+    }
+
+    .flip3D > .front{
+        width: 120px;
+        height: 120px;
+    }
+
+    .flip3D > .back{
+        width: 120px;
+        height: 120px;
+    }
+
+    .mensaje{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #reglas{
+        margin-left: 0;
+    }
+
+    #boton_reglas, #boton_jugar{
+        margin-left: 27.07%;
+    }
+
+
+}
