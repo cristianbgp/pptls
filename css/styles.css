@@ -43,7 +43,7 @@ main{
 }
 
 #boton_reglas{
-    margin: 0;
+    margin: 0 auto;
     background-color: #B90000;
     width: 200px;
     height: 71px;
@@ -51,8 +51,9 @@ main{
     border-radius: 23px;
     font-size: 2em;
     padding-top: 18px;
-    margin-left: 41.875%; /*536px;*/
+    
     cursor: pointer;
+
 }
 
 #boton_reglas:hover{
@@ -67,8 +68,10 @@ main{
     position: relative;
     font-size: 1.2em;
     padding: 14px;
-    margin-top: 55px;
-    margin-left: 26.25%;/*336px;*/
+    margin:0 auto;
+    margin-top: 26px;
+    
+    
 }
 
 #reglas blockquote{
@@ -95,7 +98,7 @@ main{
 }
 
 #boton_jugar{
-    margin: 0;
+    margin: 0 auto;
     background-color: #B90000;
     width: 200px;
     height: 71px;
@@ -103,7 +106,6 @@ main{
     border-radius: 23px;
     font-size: 2em;
     padding-top: 18px;
-    margin-left: 41.875%; /*536px;*/
     cursor: pointer;
 }
 
@@ -139,6 +141,21 @@ main{
     display: table;  
 }
 
+/*.grupo1{
+    display: inline;
+}
+
+.grupo2{
+    display: inline;
+}
+.grupo3{
+    display:inline;
+}*/
+
+.opciones>div{
+    display: inline-block;
+
+}
 
 
 /*3D*/
@@ -298,7 +315,7 @@ main{
 
 @media only screen and (max-width: 888px){
     #reglas{
-        margin-left: 19%;
+        
     }
 
     .flip3D, .front, .back {
@@ -323,6 +340,11 @@ main{
     .mensaje{
         font-size: 1.5em;
     }
+
+    #boton_reglas, #boton_jugar{
+        
+    }
+
 }
 
 @media only screen and (max-width: 856px){
@@ -355,14 +377,36 @@ main{
     }
 }
 
-@media only screen and (max-width: 480px){
-    #reglas{
-        margin-left: 0;
+@media only screen and (max-width: 756px){
+    .opciones{
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 716px){
+    .opciones{
+
+    }
+    .grupo1{
+        display: inline-block;
     }
 
-    #boton_reglas, #boton_jugar{
-        margin-left: 27.07%;
+    .grupo2{
+        display: inline-block;
     }
+
+    .grupo3{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 359px){
+    header{
+        height: 250px;     
+    }
+
+    
 
 
 }
