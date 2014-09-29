@@ -44,12 +44,12 @@ function elegistePiedra(){
 	else if(opcionMaquina == 2)
 	{
 		$(".opcion_sheldon").append("<p>Elegiste tijera</p><br><img src='img/tijera.png'alt='Tijera'>");
-		$(".mensaje").append("<p>Ganaste ( ͡° ͜ʖ ͡°)</p>");
+		$(".mensaje").append("<p>Ganaste</p>");
 	}
 	else if(opcionMaquina == 3)
 	{
 		$(".opcion_sheldon").append("<p>Elegiste lagarto</p><br><img src='img/lagarto.png'alt='Lagarto'>");
-		$(".mensaje").append("<p>Ganaste ( ͡° ͜ʖ ͡°)</p>");
+		$(".mensaje").append("<p>Ganaste</p>");
 	}
 	else if(opcionMaquina == 4)
 	{
@@ -72,7 +72,7 @@ function elegistePapel(){
 	if(opcionMaquina == 0)
 	{
 		$(".opcion_sheldon").append("<p>Elegió piedra</p><img src='img/piedra.png'alt='Piedra'>");
-		$(".mensaje").append("<p>Ganaste ( ͡° ͜ʖ ͡°)</p>");
+		$(".mensaje").append("<p>Ganaste</p>");
 	}
 	else if(opcionMaquina == 1)
 	{
@@ -92,7 +92,7 @@ function elegistePapel(){
 	else if(opcionMaquina == 4)
 	{
 		$(".opcion_sheldon").append("<p>Elegiste spock</p><br><img src='img/spock.png'alt='Spock'>");
-		$(".mensaje").append("<p>Ganaste ( ͡° ͜ʖ ͡°)</p>");
+		$(".mensaje").append("<p>Ganaste</p>");
 	}
 }
 
@@ -115,7 +115,7 @@ function elegisteTijera(){
 	else if(opcionMaquina == 1)
 	{
 		$(".opcion_sheldon").append("<p>Elegiste papel</p><br><img src='img/papel.png'alt='Papel'>");
-		$(".mensaje").append("<p>Ganaste ( ͡° ͜ʖ ͡°)</p>");
+		$(".mensaje").append("<p>Ganaste</p>");
 	}
 	else if(opcionMaquina == 2)
 	{
@@ -125,7 +125,7 @@ function elegisteTijera(){
 	else if(opcionMaquina == 3)
 	{
 		$(".opcion_sheldon").append("<p>Elegiste lagarto</p><br><img src='img/lagarto.png'alt='Lagarto'>");
-		$(".mensaje").append("<p>Ganaste ( ͡° ͜ʖ ͡°)</p>");
+		$(".mensaje").append("<p>Ganaste</p>");
 	}
 	else if(opcionMaquina == 4)
 	{
@@ -153,7 +153,7 @@ function elegisteLagarto(){
 	else if(opcionMaquina == 1)
 	{
 		$(".opcion_sheldon").append("<p>Elegiste papel</p><br><img src='img/papel.png'alt='Papel'>");
-		$(".mensaje").append("<p>Ganaste ( ͡° ͜ʖ ͡°)</p>");
+		$(".mensaje").append("<p>Ganaste</p>");
 	}
 	else if(opcionMaquina == 2)
 	{
@@ -168,7 +168,7 @@ function elegisteLagarto(){
 	else if(opcionMaquina == 4)
 	{
 		$(".opcion_sheldon").append("<p>Elegiste spock</p><br><img src='img/spock.png'alt='Spock'>");
-		$(".mensaje").append("<p>Ganaste ( ͡° ͜ʖ ͡°)</p>");
+		$(".mensaje").append("<p>Ganaste</p>");
 	}
 }
 
@@ -186,7 +186,7 @@ function elegisteSpock(){
 	if(opcionMaquina == 0)
 	{
 		$(".opcion_sheldon").append("<p>Elegió piedra</p><img src='img/piedra.png'alt='Piedra'>");
-		$(".mensaje").append("<p>Ganaste ( ͡° ͜ʖ ͡°)</p>");
+		$(".mensaje").append("<p>Ganaste</p>");
 	}
 	else if(opcionMaquina == 1)
 	{
@@ -196,7 +196,7 @@ function elegisteSpock(){
 	else if(opcionMaquina == 2)
 	{
 		$(".opcion_sheldon").append("<p>Elegiste tijera</p><br><img src='img/tijera.png'alt='Tijera'>");
-		$(".mensaje").append("<p>Ganaste ( ͡° ͜ʖ ͡°)</p>");
+		$(".mensaje").append("<p>Ganaste</p>");
 	}
 	else if(opcionMaquina == 3)
 	{
